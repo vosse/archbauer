@@ -53,7 +53,7 @@ nav {
 
 .burger div {
     width: 25px;
-    height: 1px;
+    height: 2px;
     margin: 5px;
     background-color: whitesmoke;
   }
@@ -153,6 +153,7 @@ nav {
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding-left: 0px;
     }
 
     .nav-links li {
