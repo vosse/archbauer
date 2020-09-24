@@ -1,7 +1,9 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("./assets/etienne.jpg");
+    background-image: url("./assets/rock.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow-x: hidden;
     height: 100vh;
     font-family: 'Raleway', sans-serif;
@@ -11,6 +13,10 @@ body {
     max-width: 100%;
     padding: 0px;
     margin: 0 auto;
+}
+
+.header {
+
 }
 
 nav {
@@ -59,6 +65,46 @@ nav {
   }
 
 
+.whitebox {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    height: 150px;
+    background-color: white;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-text {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: whitesmoke;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.bold-text {
+    font-style: bold;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .whitebox {
+        width: 50%;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -80,6 +126,17 @@ nav {
     .burger {
         cursor: pointer;
         display: block;
+    }
+
+    .whitebox {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .big-text {
+        font-size: 2em;
+        letter-spacing: 2px;
     }
 }
 
