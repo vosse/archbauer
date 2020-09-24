@@ -1,11 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("./assets/rock.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+
     overflow-x: hidden;
-    height: 100vh;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -15,9 +12,6 @@ body {
     margin: 0 auto;
 }
 
-.header {
-
-}
 
 nav {
     max-width: 100%;
@@ -74,7 +68,14 @@ nav {
 }
 
 
-.content {
+.header {
+    background-image: url("./assets/rock.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +87,7 @@ nav {
     text-align: center;
     margin-top: 2em;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 3em;
     color: whitesmoke;
     font-weight: 300;
     letter-spacing: 3px;
@@ -96,6 +97,45 @@ nav {
     font-style: bold;
     font-weight: 600;
 }
+
+.content {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    position: absolute;
+    top: 100px;
+}
+
+.hide {
+    background-color: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -130,6 +170,14 @@ nav {
 
     .whitebox {
         display: none;
+    }
+
+    .intro-text {
+        
+        color: whitesmoke;
+        font-size: 1.3rem;
+        margin-top: 0rem;
+        padding-top: 0rem;
     }
 }
 
