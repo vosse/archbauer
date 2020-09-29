@@ -1,7 +1,14 @@
+* {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
 body {
     margin: 0px;
     padding: 0px;
-
+    background-color: whitesmoke;
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
@@ -59,15 +66,6 @@ nav {
   }
 
 
-.whitebox {
-    position: absolute;
-    bottom: 0;
-    width: 40%;
-    height: 150px;
-    background-color: white;
-}
-
-
 .header {
     background-image: url("./assets/dark-wall.png");
     height: 100vh;
@@ -98,11 +96,7 @@ nav {
     font-weight: 600;
 }
 
-.content {
-    height: 100vh;
-    background-color: whitesmoke;
-    display: flex;
-}
+
 
 
 .intro {
@@ -138,13 +132,6 @@ nav {
 
 
 
-@media screen and (max-width: 1024px) {
-    .whitebox {
-        width: 50%;
-    }
-}
-
-
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -169,18 +156,16 @@ nav {
         display: block;
     }
 
-    .whitebox {
-        display: none;
-    }
-
     .intro-text {
-        
         color: whitesmoke;
         font-size: 1.3rem;
         margin-top: 0rem;
         padding-top: 0rem;
     }
+
+
 }
+
 
 @media screen and (max-width: 400px) {
     .big-text {

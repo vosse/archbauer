@@ -15,8 +15,12 @@ const tl = gsap.timeline({defaults: {
 }})
 
 
+
+// change values back to 1 instead of 0.1
+
 tl.to('.text', { y: '0%', duration: 1, stagger: 0.25 })
 tl.to('.intro', { y: '-100%', duration: 1, delay: 0.3 })
+tl.from('.big-text', { opacity: 0, duration:1, y: -50})
 
 
 navSlide()
